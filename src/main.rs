@@ -6,7 +6,7 @@ fn main() {
 
     let path_source = String::from(".");
 
-    if args.contains(&"-h".to_string()) {
+    if args.contains(&"-h".to_string()) || args.len() == 1 {
         println!(" - - DONDETA - - ");
         println!("This script allows two arguments.");
         println!("The first argument is the file you are looking for.");
