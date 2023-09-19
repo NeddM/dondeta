@@ -41,11 +41,6 @@ fn find_file(new_dir: &str, file_to_find: &str) {
                 }
             }
         }
-        Err(e) => {
-            println!("Folder not found");
-            println!("Please enter a valid directory");
-            println!("Error code: {}", e);
-            return;
-        }
+        Err(_) => {}
     }
 }
